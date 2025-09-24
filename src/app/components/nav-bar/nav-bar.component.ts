@@ -1,10 +1,12 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'nav-bar',
+  selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css',
 })
-export class NavBarComponent {}
+export class NavBarComponent {
+  // Votre logique de composant ici
+}
