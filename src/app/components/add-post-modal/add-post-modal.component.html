@@ -7,10 +7,16 @@
     rows="6"
     placeholder="Write your post here..."
     class="resize-none bg-gray-100 rounded-lg p-2 w-full outline-blue-400"
+    [(ngModel)]="postContent"
   ></textarea>
   <div class="flex justify-end">
     <button
-      class="bg-blue-500 text-white rounded-lg px-4 py-2 w-fit flex items-center gap-2 cursor-pointer"
+      [disabled]="!postContent.trim()"
+      [ngClass]="{
+        'bg-blue-500 hover:bg-blue-600': postContent.trim(),
+        'bg-gray-400 cursor-not-allowed': !postContent.trim()
+      }"
+      class="text-white rounded-lg px-4 py-2 w-fit flex items-center gap-2 transition-all duration-300"
     >
       <p>Submit</p>
       <svg
