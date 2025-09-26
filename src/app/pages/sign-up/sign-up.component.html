@@ -1,0 +1,98 @@
+<div
+  class="flex justify-center items-center min-h-[calc(100vh-5rem)] bg-gray-50/50"
+>
+  <div
+    class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-md mx-4"
+  >
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-900">Create an account</h2>
+      <p class="text-gray-500 mt-2">Enter your information to get started</p>
+    </div>
+
+    <form class="space-y-6">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="space-y-2">
+          <label
+            for="firstname"
+            class="block text-sm font-medium text-gray-700"
+          >
+            First name
+          </label>
+          <div class="relative">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50/50 text-gray-900 outline-none transition-all duration-300 hover:bg-white focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+              placeholder="John"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label for="lastname" class="block text-sm font-medium text-gray-700">
+            Last name
+          </label>
+          <div class="relative">
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50/50 text-gray-900 outline-none transition-all duration-300 hover:bg-white focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+              placeholder="Doe"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <label for="email" class="block text-sm font-medium text-gray-700">
+          Email
+        </label>
+        <div class="relative">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50/50 text-gray-900 outline-none transition-all duration-300 hover:bg-white focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            placeholder="john.doe@example.com"
+          />
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <label for="password" class="block text-sm font-medium text-gray-700">
+          Password
+        </label>
+        <div class="relative">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full p-3 rounded-xl border border-gray-200 bg-gray-50/50 text-gray-900 outline-none transition-all duration-300 hover:bg-white focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            placeholder="••••••••"
+          />
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 transform hover:scale-[1.02]"
+      >
+        Create account
+      </button>
+    </form>
+
+    <div class="mt-8 pt-6 border-t border-gray-100">
+      <p class="text-center text-sm text-gray-500">
+        Already have an account?
+        <a
+          routerLink="/sign-in"
+          class="font-medium text-blue-600 hover:text-blue-500 transition-colors duration-300"
+        >
+          Sign in
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

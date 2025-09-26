@@ -1,19 +1,35 @@
 <article
-  class="bg-white rounded-lg my-2 p-2 shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] w-2/3"
+  class="w-full bg-white/95 backdrop-blur-sm rounded-xl my-4 p-6 shadow-lg transition-all duration-300 border border-gray-100"
 >
-  <div class="flex items-center gap-1">
-    <span class="text-gray-500">By</span>
-    <p class="font-bold">John Doe</p>
-    <span class="text-gray-500">on</span>
-    <p class="font-bold">2025-09-24</p>
+  <!-- Author and date info with modern layout -->
+  <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center gap-3">
+      <div
+        class="size-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-medium"
+      >
+        JD
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-800">John Doe</h3>
+        <p class="text-sm text-gray-500">Author</p>
+      </div>
+    </div>
+    <time class="text-sm text-gray-500 tabular-nums">Sept 24, 2025</time>
   </div>
 
-  <p id="post-content" class="my-2">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  </p>
-  <div class="flex items-center gap-2">
+  <!-- Post content with improved typography -->
+  <div class="space-y-4">
+    <p id="post-content" class="text-gray-700 leading-relaxed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+  </div>
+
+  <!-- Interaction section with modern design -->
+  <div
+    class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between"
+  >
     <button
-      class="bg-blue-500 text-white rounded-lg px-4 py-2 w-fit flex items-center gap-2 cursor-pointer"
+      class="group flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 hover:bg-blue-600 transition-all duration-300"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +37,7 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6"
+        class="size-5 text-blue-600 group-hover:text-white transition-colors duration-300"
       >
         <path
           stroke-linecap="round"
@@ -29,11 +45,14 @@
           d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
         />
       </svg>
-
-      <p>Like</p>
+      <span
+        class="text-blue-600 group-hover:text-white transition-colors duration-300 font-medium"
+        >Like</span
+      >
     </button>
-    <div class="flex items-center gap-1">
-      <span class="text-gray-400">10</span>
+
+    <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50">
+      <span class="font-medium text-gray-700">10</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
